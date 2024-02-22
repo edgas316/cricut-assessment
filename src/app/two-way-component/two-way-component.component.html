@@ -1,0 +1,16 @@
+<div class="clr-row buttons-container">
+    <div class="clr-col-12">
+        <button class="btn btn" (click)="emitChangeContent($event)">{{buttonOneName}}</button>
+        <button class="btn btn-success" (click)="emitToggleContentVisibility($event)">{{buttonTwoName}}</button>
+        <button class="btn btn-info" (click)="emitDefaultContent($event)">{{buttonThreeName}}</button>
+    </div>
+</div>
+<ng-content select=".proj-one"></ng-content>
+<div *ngIf="isVisible" class="clr-row content-container">
+    <div class="clr-col-12">
+        <p>
+            {{content}}
+        </p>
+    </div>
+</div>
+<ng-content select=".proj-two"></ng-content>

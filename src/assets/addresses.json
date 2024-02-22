@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "state": "TX",
+        "city": "Dallas",
+        "street": "1234 Main Streat"
+    },
+    {
+        "id": 2,
+        "state": "CA",
+        "city": "Freemont",
+        "street": "6598 Walnut Avenue"
+    },
+    {
+        "id": 3,
+        "state": "FL",
+        "city": "Tampa",
+        "street": "9898 Freeway"
+    },
+    {
+        "id": 4,
+        "state": "NY",
+        "city": "New York",
+        "street": "13 Avenue"
+    },
+    {
+        "id": 5,
+        "state": "MA",
+        "city": "Boston",
+        "street": "Sunnie Street"
+    }
+]

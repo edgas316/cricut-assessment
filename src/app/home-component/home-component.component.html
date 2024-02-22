@@ -1,0 +1,20 @@
+<div class="home-container">
+    <h1 class="date">{{today | date}}</h1>
+    <app-two-way-component
+        [content]="content"
+        [isVisible]="isVisible"
+        [buttonOneName]="buttonOneName"
+        [buttonTwoName]="buttonTwoName"
+        [buttonThreeName]="buttonThreeName"
+        [buttonFourName]="buttonFourName"
+        [buttonFiveName]="buttonFiveName"
+        (addContent)="addContent($event)"
+        (defaultContent)="toDefaultContent($event)"
+        (toggleContentVisibility)="toggleContentVisibility($event)">
+        <h3 class="proj-one">This is Content Prjection ONE</h3>
+        <h3 class="proj-two">This is Content Prjection TWO</h3>
+    </app-two-way-component>
+    <div>
+        <app-card-component *ngFor="let person of people;" [cardData]="person"></app-card-component>
+    </div>
+</div>
